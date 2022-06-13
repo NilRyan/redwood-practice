@@ -3678,7 +3678,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/api@npm:1.5.1":
+"@redwoodjs/api@npm:1.5.1, @redwoodjs/api@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/api@npm:1.5.1"
   dependencies:
@@ -3772,7 +3772,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/core@npm:1.5.1":
+"@redwoodjs/core@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/core@npm:1.5.1"
   dependencies:
@@ -3871,7 +3871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/forms@npm:1.5.1":
+"@redwoodjs/forms@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/forms@npm:1.5.1"
   dependencies:
@@ -3886,7 +3886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/graphql-server@npm:1.5.1":
+"@redwoodjs/graphql-server@npm:1.5.1, @redwoodjs/graphql-server@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/graphql-server@npm:1.5.1"
   dependencies:
@@ -3977,7 +3977,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/router@npm:1.5.1":
+"@redwoodjs/router@npm:1.5.1, @redwoodjs/router@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/router@npm:1.5.1"
   dependencies:
@@ -4077,7 +4077,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redwoodjs/web@npm:1.5.1":
+"@redwoodjs/web@npm:1.5.1, @redwoodjs/web@npm:^1.5.1":
   version: 1.5.1
   resolution: "@redwoodjs/web@npm:1.5.1"
   dependencies:
@@ -6736,7 +6736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webpack-cli/configtest@npm:^1.1.1":
+"@webpack-cli/configtest@npm:^1.1.1, @webpack-cli/configtest@npm:^1.2.0":
   version: 1.2.0
   resolution: "@webpack-cli/configtest@npm:1.2.0"
   peerDependencies:
@@ -6746,7 +6746,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webpack-cli/info@npm:^1.4.1":
+"@webpack-cli/info@npm:^1.4.1, @webpack-cli/info@npm:^1.5.0":
   version: 1.5.0
   resolution: "@webpack-cli/info@npm:1.5.0"
   dependencies:
@@ -6757,7 +6757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webpack-cli/serve@npm:^1.6.1":
+"@webpack-cli/serve@npm:^1.6.1, @webpack-cli/serve@npm:^1.7.0":
   version: 1.7.0
   resolution: "@webpack-cli/serve@npm:1.7.0"
   peerDependencies:
@@ -7218,8 +7218,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "api@workspace:api"
   dependencies:
-    "@redwoodjs/api": 1.5.1
-    "@redwoodjs/graphql-server": 1.5.1
+    "@redwoodjs/api": ^1.5.1
+    "@redwoodjs/graphql-server": ^1.5.1
   languageName: unknown
   linkType: soft
 
@@ -20740,7 +20740,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@redwoodjs/core": 1.5.1
+    "@redwoodjs/core": ^1.5.1
   languageName: unknown
   linkType: soft
 
@@ -23734,12 +23734,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:web"
   dependencies:
-    "@redwoodjs/forms": 1.5.1
-    "@redwoodjs/router": 1.5.1
-    "@redwoodjs/web": 1.5.1
+    "@redwoodjs/forms": ^1.5.1
+    "@redwoodjs/router": ^1.5.1
+    "@redwoodjs/web": ^1.5.1
     prop-types: 15.8.1
     react: 17.0.2
     react-dom: 17.0.2
+    webpack-cli: ^4.10.0
   languageName: unknown
   linkType: soft
 
@@ -23813,6 +23814,39 @@ __metadata:
   bin:
     webpack-cli: bin/cli.js
   checksum: 42666e258bd44f0f0374de0bff696ee7d87dbc31fb7c17fd24aab44d99ab278aafb888a3f62953362436c2d8c37274dc19e2ef36cfac00d3887ac77f92e72656
+  languageName: node
+  linkType: hard
+
+"webpack-cli@npm:^4.10.0":
+  version: 4.10.0
+  resolution: "webpack-cli@npm:4.10.0"
+  dependencies:
+    "@discoveryjs/json-ext": ^0.5.0
+    "@webpack-cli/configtest": ^1.2.0
+    "@webpack-cli/info": ^1.5.0
+    "@webpack-cli/serve": ^1.7.0
+    colorette: ^2.0.14
+    commander: ^7.0.0
+    cross-spawn: ^7.0.3
+    fastest-levenshtein: ^1.0.12
+    import-local: ^3.0.2
+    interpret: ^2.2.0
+    rechoir: ^0.7.0
+    webpack-merge: ^5.7.3
+  peerDependencies:
+    webpack: 4.x.x || 5.x.x
+  peerDependenciesMeta:
+    "@webpack-cli/generators":
+      optional: true
+    "@webpack-cli/migrate":
+      optional: true
+    webpack-bundle-analyzer:
+      optional: true
+    webpack-dev-server:
+      optional: true
+  bin:
+    webpack-cli: bin/cli.js
+  checksum: e144821a3eaf8c2598e80d6bc8b1b4035e6f5cb0046b3090ad0f858f87480f007127d5c5efa83c79436df3f31e0c0d6033fd9ea93526395984ef986ba5d72aa3
   languageName: node
   linkType: hard
 
